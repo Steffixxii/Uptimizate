@@ -1,0 +1,424 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .centrado {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    /*---------------------Distribución Flex-----------------------*/
+    
+    .flexFather {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .flexItem {
+        justify-items: flex-start;
+        align-items: strech;
+    }
+    
+    .left {
+        align-self: flex-start;
+        width: 33%;
+    }
+    
+    .right {
+        margin-left: auto;
+        width: 33%;
+    }
+    /*------------------------------------ Logos ------------------------------------*/
+    
+    a.logo {
+        display: inline-block;
+        font-size: 25px;
+        color: #636160;
+        padding: 15px 0;
+    }
+    
+    a.logo:hover {
+        color: #A1BBC8;
+    }
+    
+    .logoFooter a {
+        display: inline-block;
+        margin: 40px 0px 40px 40px;
+        height: auto;
+        font-size: 30px;
+        color: #636160;
+        background-color: #d4e1e9;
+        padding: 15px;
+        border: 1px solid #a8a6a4;
+        border-radius: 15px;
+    }
+    
+    .logoFooter a:hover {
+        color: #636160;
+        background-color: #fff;
+        border: 1px solid #a8a6a4;
+    }
+    /*----------------------------------- Menús -----------------------------------*/
+    
+    .menuFooter a {
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #A1BBC8;
+        display: inline-block;
+        margin: auto;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .menu a {
+        display: inline-block;
+        padding: 23px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #5a7785;
+    }
+    
+    .menu a:hover,
+    .menuFooter a:hover {
+        color: #5a7785;
+    }
+    /* ------------------------ Listados-----------------*/
+    
+    .listaBolitas {
+        width: 60%;
+        list-style-type: circle;
+        margin: 0 100px;
+    }
+    /*------------------------- Títulos y Textos ------------------------------*/
+    
+    .tituloSeccion {
+        padding: 50px 0;
+        font-size: 45px;
+        font-weight: 400;
+        color: #5a7785;
+    }
+    
+    .tituloProyecto {
+        font-size: 20px;
+        font-weight: 400;
+        color: #5a7785;
+    }
+    
+    h1 {
+        color: #5a7785;
+        padding-top: 7%;
+        font-size: 55px;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .texto {
+        width: 95%;
+        font-size: 14px;
+        font-weight: 300;
+        color: #636160;
+        padding: 25px 0;
+    }
+    /* --------------------- Tabla ----------------------------------*/
+    
+    .tabla {
+        width: 80%;
+        height: auto;
+        color: #5a7785;
+        text-align: center;
+        margin: 30px auto;
+        border-radius: 15px;
+        border-spacing: 20px 5px;
+    }
+    
+    td {
+        padding: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    th {
+        font-weight: 600;
+        font-size: 18px;
+        background-color: #A1BBC8;
+        color: #fff;
+        border-radius: 10px;
+    }
+    
+    .gris {
+        background-color: #b7d1df;
+    }
+    /* ----- Formulario----*/
+    /*-- Formulario --*/
+    
+    .itemFormulario,
+    .itemBotones {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #formulario {
+        margin: 100px 0;
+    }
+    /*--------------------- Proyectos Destacados -------------------------*/
+    
+    .cajaArticulos {
+        width: 100%;
+    }
+    
+    .artDestacado {
+        width: 30%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    /*-----------------------------------SECCIONES -----------------------------------*/
+    /* --------SECCIÓN Cabecera --------*/
+    
+    .cabecera {
+        height: 70px;
+        border-bottom: 1px solid #E9EEF1;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    #navmenu a:hover {
+        color: #A1BBC8;
+    }
+    /*-------------------------Grid Cabecera ---------------*/
+    
+    .gridCabecera {
+        display: grid;
+        grid-template-areas: "logo menu ";
+        grid-template-columns: 35% 65%;
+    }
+    
+    #logoCabecera {
+        grid-area: logo;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    #navmenu {
+        grid-area: menu;
+        justify-content: center;
+        align-items: center;
+    }
+    /*-------------------------FIN Grid Cabecera ---------------*/
+    /*-------------------------SECCIÓN Cabecera------------------------*/
+    /* -------- SECCIÓN Principal --------*/
+    
+    .seccionPrincipal {
+        height: 950px;
+        background-image: url(../img/steffigarcia.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .sobreMi {
+        margin: left;
+        width: 60%;
+        font-size: 15px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 0px 7px 3px #b3cad6;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        bottom: 70px;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+    }
+    /*----------FIN SECCIÓN Principal -------------------------------*/
+    /* -------- SECCIÓN Destacados --------*/
+    
+    .seccionDestacados {
+        height: 450px;
+    }
+    /*----------FIN SECCIÓN Destacados ------------------------------*/
+    /* -------- SECCIÓN Eleva --------*/
+    
+    .transform:hover {
+        transform: scale(1.5, 1.5);
+        padding-right: 2px;
+    }
+    
+    .seccionEleva {
+        background: rgb(105, 136, 153);
+        background: linear-gradient(90deg, rgba(105, 136, 153, 1) 0%, rgba(161, 187, 200, 1) 35%, rgba(233, 238, 241, 1) 100%);
+        height: 535px;
+        position: relative;
+    }
+    /* --------Newsletter --------*/
+    
+    .newsletter {
+        margin: auto;
+        width: 500px;
+        height: 50px;
+        font-size: 15px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 0px 7px 3px #b3cad6;
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        left: 0;
+    }
+    
+    .newsform {
+        display: inline-block;
+        margin: auto;
+    }
+    
+    .newsform input,
+    button {
+        border: 1px solid #A1BBC8;
+        border-radius: 5px;
+        padding: 3px 5px;
+        color: #fff;
+        display: inline-block;
+    }
+    
+    button {
+        background-color: #A1BBC8;
+        padding: 3px 5px;
+    }
+    
+    button:hover {
+        background-color: #fff;
+        color: #A1BBC8;
+    }
+    
+    .email-input {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .email-input p {
+        font-weight: 600;
+        display: inline-block;
+        padding-right: 20px;
+        color: #5a7785;
+    }
+    /*---------FIN SECCIÓN Eleva ----------------------------------*/
+    /* -------- Footer --------*/
+    
+    footer {
+        height: 270px;
+        background-color: #46565f;
+        color: #A1BBC8;
+        font-size: 14px;
+        padding-top: 50px;
+    }
+    
+    footer a {
+        color: #a8a6a4;
+    }
+    
+    footer a:hover {
+        color: #A1BBC8;
+    }
+    
+    .infoFooter {
+        padding-top: 10px;
+        text-align: center;
+        border-top: 1px solid #A1BBC8;
+    }
+    
+    .redesFooter {
+        display: inline-block;
+        font-size: 30px;
+        padding: 15px;
+    }
+    
+    .email-input {
+        justify-items: flex-end;
+        padding-left: 25px;
+    }
+    /*---------FIN SECCIÓN Footer ----------------------------------*/
+    /*---------PÁGINA SERVICIOS ----------------------------------*/
+    /* --- flex Servicios ---*/
+    
+    #titLineas {
+        border-radius: 15px;
+        background-color: #46565f;
+        color: #fff;
+        height: 100px;
+        width: 20vw;
+        margin: 20px auto;
+    }
+    
+    #LineasdeNegocio {
+        flex: 0 0 auto;
+        height: 85vh;
+        background: rgb(105, 136, 153);
+        background: linear-gradient(90deg, rgba(105, 136, 153, 1) 0%, rgba(161, 187, 200, 1) 35%, rgba(233, 238, 241, 1) 100%);
+    }
+    
+    .seccion {
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.548);
+        align-items: center;
+        height: 300px;
+        width: 42%;
+        display: inline-block;
+        text-align: center;
+        margin: 1.5% auto;
+        padding: 0 1.5rem;
+    }
+    
+    .seccion:hover {
+        background-color: #fff;
+    }
+    
+    .tituloLinea {
+        padding: 45px 10px;
+        font-size: 35px;
+        font-weight: 300;
+        color: #fff;
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .tituloSec {
+        padding: 20px 10px;
+        font-size: 35px;
+        font-weight: 400;
+        color: #5a7785;
+        text-align: center;
+    }
+    /*--------- FIN PÁGINA SERVICIOS ----------------------------------*/

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacta</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!----------------------------------------- Cabecera ----------------------------------------->
+    <header class="cabecera">
+        <div class="centrado">
+            <div class="gridCabecera">
+
+                <!----------- Logo Cabecera------------>
+
+                <div id="logoCabecera">
+                    <a href="index.html" class="logo">STEFFI GARCIA</a>
+                </div>
+                <!----------- Menú Cabecera------------>
+                <div id="navmenu">
+                    <nav>
+                        <ul class="menu flexFather">
+                            <li class="flexItem"><a href="servicios.html ">Servicios</a></li>
+                            <li class="flexItem"><a href="cursos.html ">Cursos</a></li>
+                            <li class="flexItem"><a href="https://steffigarcia.com">Tienda Online</a></li>
+                            <li class="flexItem"><a href="blog.html ">Blog</a></li>
+                            <li class="flexItem"><a href="Contacta.html ">Contacta</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+    </header>
+    <main>
+        <!-- Formulario -->
+        <article class="centrado">
+            <article class="centrado">
+                <h1>Contacta</h1>
+                <section id="formulario" class="">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" class="formFooter">
+                        <fieldset class="left itemFormulario">
+                            <legend>Datos de identificación:</legend>
+                            <label for="nombre">Nombre y Apellido <input id="nombre" name="name" maxlength="50" type="text" placeholder="Nombre completo"></label>
+                        </fieldset>
+                        <fieldset class="right itemFormulario">
+                            <legend>Idioma de contacto:</legend>
+                            <label for="Idioma1"><input id="Idioma1" type="radio" name="Idioma" value="spanish" checked>Español</label>
+                            <label for="Idioma2"> <input id="Idioma2" type="radio" name="Idioma" value="ingles"> Inglés </label>
+                        </fieldset>
+                        <fieldset class="left itemFormulario">
+                            <legend>Cuéntame cómo ayudarte:</legend>
+                            <br />
+                            <label for="email">Email  <input id="email" name="email" type="email" placeholder="Email"></label> <br />
+                            <label for="asunto">Asunto <input id="asunto" name="asunto" type="text" placeholder="Asunto"></label> <br />
+                            <label for="message">Mensaje <textarea id="message" name="message" placeholder="Escribe aquí tu mensaje"></textarea></label>
+                        </fieldset>
+
+                        <fieldset class="right itemFormulario">
+                            <legend>Elige tu transporte preferido:</legend>
+                            <br />
+                            <label for="andar"><input id="andar" name="checkboxTransporte" type="checkbox" />Andar</label>
+                            <label for="bici"><input id="bici" name="checkboxTransporte" type="checkbox" /> Bici</label>
+                            <br />
+                            <label for="coche"> <input id="coche" name="checkboxTransporte" type="checkbox" />Coche</label>
+                            <label for="unicornio"> <input id="unicornio" name="checkboxTransporte" type="checkbox" />Unicornio</label>
+                            <br />
+                        </fieldset>
+                        <fieldset class="left itemBotones">
+                            <button type="reset">Resetear</button>
+                            <input id="submit" type="submit" value="Enviar" />
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+    </main>
+</body>
+<!-----------        FOOTER       -------------------------------------->
+
+<footer>
+    <div class="centrado ">
+        <div class="flexFather ">
+
+            <!------------------------------- logo FOOTER ---------------------------------------------------------------->
+            <div class="logoFooter left ">
+                <a href="index.html ">STEFFI GARCIA</a>
+            </div>
+
+            <!-------------------------------- menú FOOTER --------------------------------------------------------------->
+
+            <div class="flexItem ">
+                <nav class="navFooter ">
+                    <ul class="menuFooter ">
+                        <li><a href="sobreMi.html ">Sobre mi</a></li>
+                        <li><a href="envios.html ">Envíos</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li>
+                            <a href="mailto:info@steffigarcia.com "> <i class="far fa-envelope "></i> info@steffigarcia.com</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="flexItem">
+                <nav>
+                    <ul class="menuFooter">
+                        <li>
+                            <p>Sígueme en:</p>
+                            <a class="instagram " href="https://www.instagram.com/steffi_xxii "><i class="fab fa-instagram redesFooter "></i></a>
+                            <a class="pinterest " href="# "><i class="fab fa-pinterest redesFooter "></i></a>
+                            <a class="twitter " href="https://www.twitter.com/EstefaniaGE "><i class="fab fa-twitter redesFooter "></i></a>
+                            <a class="linkedin " href="https://www.linkedin.com/in/estefaniagaes "><i class="fab fa-linkedin-in redesFooter "></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+    <!------------------------------- bloque INFO FOOTER----------------------->
+
+    <div class="infoFooter">
+
+        <p>&copy;2021 Designed and Developed by
+            <a href="# ">Uptimizate </a>
+        </p>
+
+
+    </div>
+
+</footer>
+</body>
+
+</html>
