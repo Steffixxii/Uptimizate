@@ -16,12 +16,21 @@
         width: 1140px;
         margin: 0 auto;
     }
-    /*---------------------Distribución Flex-----------------------*/
+    
+    .fotoleft {
+        padding: 15px 30px 10px 0;
+        float: left;
+    }
+    
+    .fotoright {
+        padding: 15px 0 10px 30px;
+        float: right;
+    }
+    /*---------------------Distribución Flex y Float-----------------------*/
     
     .flexFather {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -39,6 +48,10 @@
     .right {
         margin-left: auto;
         width: 33%;
+    }
+    
+    .float {
+        float: right;
     }
     /*------------------------------------ Logos ------------------------------------*/
     
@@ -100,9 +113,9 @@
     /* ------------------------ Listados-----------------*/
     
     .listaBolitas {
-        width: 60%;
+        width: 80%;
         list-style-type: circle;
-        margin: 0 100px;
+        margin: 0 auto;
     }
     /*------------------------- Títulos y Textos ------------------------------*/
     
@@ -121,10 +134,16 @@
     
     h1 {
         color: #5a7785;
-        padding-top: 7%;
+        padding: 20px;
         font-size: 55px;
         font-weight: 300;
         text-align: center;
+    }
+    
+    .tituloBio {
+        font-size: 30px;
+        font-weight: 400;
+        color: #5a7785;
     }
     
     .texto {
@@ -132,7 +151,7 @@
         font-size: 14px;
         font-weight: 300;
         color: #636160;
-        padding: 25px 0;
+        padding: 15px 0;
     }
     /* --------------------- Tabla ----------------------------------*/
     
@@ -180,7 +199,8 @@
     /*--------------------- Proyectos Destacados -------------------------*/
     
     .cajaArticulos {
-        width: 100%;
+        margin: 50px auto;
+        width: 80vw;
     }
     
     .artDestacado {
@@ -192,12 +212,13 @@
     /* --------SECCIÓN Cabecera --------*/
     
     .cabecera {
+        width: 100vw;
         height: 70px;
         border-bottom: 1px solid #E9EEF1;
         background-color: #fff;
         position: fixed;
-        width: 100%;
         top: 0;
+        overflow: hidden;
     }
     
     #navmenu a:hover {
@@ -227,7 +248,7 @@
     /* -------- SECCIÓN Principal --------*/
     
     .seccionPrincipal {
-        height: 950px;
+        height: 95vh;
         background-image: url(../img/steffigarcia.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -245,7 +266,7 @@
         text-align: center;
         display: inline-block;
         position: absolute;
-        bottom: 70px;
+        top: -20px;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count: 1;
@@ -254,7 +275,8 @@
     /* -------- SECCIÓN Destacados --------*/
     
     .seccionDestacados {
-        height: 450px;
+        height: 100px;
+        position: relative;
     }
     /*----------FIN SECCIÓN Destacados ------------------------------*/
     /* -------- SECCIÓN Eleva --------*/
@@ -377,15 +399,14 @@
     }
     
     .seccion {
-        border-radius: 15px;
-        background-color: rgba(255, 255, 255, 0.548);
-        align-items: center;
         height: 300px;
-        width: 42%;
-        display: inline-block;
+        width: 46%;
         text-align: center;
-        margin: 1.5% auto;
-        padding: 0 1.5rem;
+        padding: 20px;
+        margin: 20px;
+        background-color: #f9f9fa;
+        border: 1px solid #E9EEF1;
+        border-radius: 18px;
     }
     
     .seccion:hover {
@@ -422,3 +443,77 @@
         text-align: center;
     }
     /*--------- FIN PÁGINA SERVICIOS ----------------------------------*/
+    /*--------- INICIO PÁGINA SOBRE MI ----------------------------------*/
+    
+    .bannerPagina {
+        width: 100vw;
+        height: 50px;
+        padding-top: 75px;
+        background-color: #91bcd1;
+    }
+    
+    .pagina {
+        width: 100vw;
+        height: 80px;
+        padding-bottom: 20px;
+        background-color: #91bcd142;
+    }
+    
+    .pagina__titulo {
+        padding: 20px;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: end;
+        color: #5a7785;
+    }
+    
+    .section {
+        padding: 50px 0;
+    }
+    
+    .textoLista {
+        text-align: center;
+        list-style: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: #636160;
+        padding: 10px 0;
+    }
+    
+    .cajalista {
+        width: 30%;
+        height: auto;
+        padding: 20px;
+        margin: 10px;
+        background-color: #f9f9fa;
+        border: 1px solid #E9EEF1;
+        border-radius: 18px;
+    }
+    
+    .cajalista:hover {
+        background-color: #95cae946;
+        border: 1px solid #3c8cbb;
+        color: #3c8cbb;
+    }
+    
+    .seccionBackground-color {
+        background-color: #f9f9fa;
+        border-radius: 18px;
+        padding: 20px;
+    }
+    
+    .listacajas {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .textoCentrado {
+        text-align: center;
+    }
+    
+    .fotobio {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    /*--------- INICIO PÁGINA SOBRE MI ----------------------------------*/
