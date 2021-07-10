@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Desafío 2 Estrctura HTML</title>
+    <title>Uptimizate</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d7e908d467.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 
@@ -26,13 +25,13 @@
                 <!----------- Menú Cabecera------------>
                 <div id="navmenu">
                     <nav>
-                        <ul class="menu flexFather">
-                            <li class="flexItem"><a href="sobreMi.html ">Sobre mi</a></li>
-                            <li class="flexItem"><a href="servicios.html">Servicios</a></li>
-                            <li class="flexItem"><a href="cursos.html">Cursos</a></li>
-                            <li class="flexItem"><a href="https://steffigarcia.com">Tienda Online</a></li>
-                            <li class="flexItem"><a href="envios.html ">Envíos</a></li>
-                            <li class="flexItem"><a href="Contacta.html">Contacta</a></li>
+                        <ul class="menu nav flexFather">
+                            <li class="nav-item flexItem">
+                                <a class="nav-link" href=" sobreMi.html ">Sobre mi</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="servicios.html ">Servicios</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="cursos.html ">Cursos</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="https://steffigarcia.com ">Tienda Online</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="Contacta.html ">Contacta</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -44,34 +43,31 @@
 
 
         <!-----------Sección Bienvenidos,valores, branding inicial-------------------------->
-        <article class="seccionPrincipal">
-
-        </article>
-        <!-----------Sección Proyectos Destacados ------------------------------------------>
-        <article class="seccionDestacados">
-            <div class="centrado">
-
-                <div class="sobreMi">
-                    <p class="texto">Pequeña descripción sobre mi: <i class="fas fa-user-astronaut"> </i> Previvor <i class="fas fa-heart"></i> Psychologist <i class="fas fa-carrot"></i> Nutrition <i class="fas fa-microphone-alt"></i> Metal Vocalist <i class="fas fa-rainbow"></i>                        Makeup Artist <i class="far fa-lightbulb"></i> Project Management <i class="fas fa-globe"></i> Digital Marketing <i class="fas fa-code"></i> Frontend Developer <i class="fab fa-bitcoin"></i> Stunned by Crypto</p>
+        <article class="seccionPrincipal ">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slider1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-
-
-
-            <!----------- Sección Newsletter------------>
-
-            <section class="newsletter">
-                <div class="email-input ">
-                    <p>No te pierdas nada!</p>
-                    <form class="newsform">
-                        <input type="text " placeholder="*email " id="email ">
-                        <button class="shown " type="button " id="subs ">Suscribete</button>
-                    </form>
-                </div>
-            </section>
         </article>
-        </div>
+
+
 
     </main>
 
@@ -85,15 +81,22 @@
                 <div class="logoFooter left ">
                     <a href="index.html ">STEFFI GARCIA</a>
                 </div>
+                <!----------- Sección Newsletter------------>
 
+                <section class="newsletter ">
+                    <form class="newsletter__newsform ">
+                        <input class="newsletter__newsform__input " type=" text " placeholder="*email " id="email ">
+                        <button class="newsletter__newsform__button " type="button " id="subs ">Suscribete</button>
+                    </form>
+                </section>
                 <!-------------------------------- menú FOOTER --------------------------------------------------------------->
 
                 <div class="flexItem ">
                     <nav class="navFooter ">
                         <ul class="menuFooter ">
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog.html ">Blog</a></li>
                             <li><a href="envios.html ">Envíos</a></li>
-                            <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                            <li><a href="politica-privacidad.html ">Política de Privacidad</a></li>
                             <li>
                                 <a href="mailto:info@steffigarcia.com "> <i class="far fa-envelope "></i> info@steffigarcia.com</a>
                             </li>
@@ -101,15 +104,15 @@
                     </nav>
 
                 </div>
-                <div class="flexItem">
+                <div class="flexItem ">
                     <nav>
-                        <ul class="menuFooter">
+                        <ul class="menuFooter ">
                             <li>
                                 <p>Sígueme en:</p>
-                                <a class="instagram" href="https://www.instagram.com/steffi_xxii "><i class="fab fa-instagram redesFooter "></i></a>
-                                <a class="pinterest" href="# "><i class="fab fa-pinterest redesFooter "></i></a>
-                                <a class="twitter" href="https://www.twitter.com/EstefaniaGE "><i class="fab fa-twitter redesFooter "></i></a>
-                                <a class="linkedin" href="https://www.linkedin.com/in/estefaniagaes "><i class="fab fa-linkedin-in redesFooter "></i></a>
+                                <a class="instagram " href="https://www.instagram.com/steffi_xxii "><i class="fab fa-instagram redesFooter "></i></a>
+                                <a class="pinterest " href="# "><i class="fab fa-pinterest redesFooter "></i></a>
+                                <a class="twitter " href="https://www.twitter.com/EstefaniaGE "><i class="fab fa-twitter redesFooter "></i></a>
+                                <a class="linkedin " href="https://www.linkedin.com/in/estefaniagaes "><i class="fab fa-linkedin-in redesFooter "></i></a>
                             </li>
                         </ul>
                     </nav>
@@ -119,8 +122,8 @@
 
         </div>
         <!------------------------------- bloque INFO FOOTER----------------------->
-
-        <div class="infoFooter">
+        <div class="separator "></div>
+        <div class="infoFooter centrado ">
 
             <p>&copy;2021 Designed and Developed by
                 <a href="# ">Uptimizate </a>
@@ -130,6 +133,8 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Sobre mí</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -24,103 +25,90 @@
                 <!----------- Menú Cabecera------------>
                 <div id="navmenu">
                     <nav>
-                        <ul class="menu flexFather">
-                            <li class="flexItem"><a href="sobreMi.html ">Sobre mi</a></li>
-                            <li class="flexItem"><a href="servicios.html">Servicios</a></li>
-                            <li class="flexItem"><a href="cursos.html">Cursos</a></li>
-                            <li class="flexItem"><a href="https://steffigarcia.com">Tienda Online</a></li>
-                            <li class="flexItem"><a href="envios.html ">Envíos</a></li>
-                            <li class="flexItem"><a href="Contacta.html">Contacta</a></li>
+                        <ul class="menu nav flexFather">
+                            <li class="nav-item flexItem">
+                                <a class="nav-link" href=" sobreMi.html ">Sobre mi</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="servicios.html ">Servicios</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="cursos.html ">Cursos</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="https://steffigarcia.com ">Tienda Online</a></li>
+                            <li class="nav-item flexItem "><a class="nav-link" href="Contacta.html ">Contacta</a></li>
                         </ul>
                     </nav>
                 </div>
 
             </div>
     </header>
-    <main class="main ">
-
-        <section class="bannerPagina">
-
+    <div class="sobreMiPagina">
+        <section class="pagina ">
+            <h4 class="paginaTituloBlanco centrado">Sobre mi</h4>
         </section>
-        <section class="pagina">
-            <h4 class="pagina__titulo centrado">Sobre mi</h4>
-        </section>
-        <article class="centrado">
+
+        <article class="biografia centrado">
+            <div class="sobreMi_resumen centrado">
+                <p class="texto"><i class="fas fa-user-astronaut"> </i> Previvor <br> <i class="fas fa-heart"></i> Psychologist <br><i class="fas fa-carrot"></i> Nutrition <br><i class="fas fa-microphone-alt"></i> Metal Vocalist<br> <i class="fas fa-rainbow"></i> Makeup
+                    Artist
+                    <br><i class="far fa-lightbulb"></i> Project Management <br><i class="fas fa-globe"></i> Digital Marketing <br><i class="fas fa-code"></i> Frontend Developer <br><i class="fab fa-bitcoin"></i> Stunned by Crypto</p>
+            </div>
+
+            <section class="section centrado">
+                <h3 class="subtitleWhite textoCentrado">Misión y Valores</h3>
+                <p class="textWhite textoCentrado">Si algo he aprendido de todo esto son las bases que impulsan mi razón de ser y mis valores:
+                    <ul class="listacajas flexFather">
+                        <li class="textoLista cajalista">Me apasiona ayudar a los demás a encontrar una mejor versión de ellos mismos</li>
+                        <li class="textoLista cajalista">Trabajo con personas y con proyectos</li>
+                        <li class="textoLista cajalista">Nunca se acaba de aprender</li>
+                        <li class="textoLista cajalista">No hay mejor reto que seguir superándose</li>
+                        <li class="textoLista cajalista">Un perfil multidisciplinar me permite una visión de 360º</li>
+                        <li class="textoLista cajalista">Enamorada de las soluciones creativas</li>
+                        <li class="textoLista cajalista">Que la diferenciación marque tu línea de vida es maravilloso</li>
+                        <li class="textoLista cajalista">Arte y Optimización no están reñidos</li>
+                        <li class="textoLista cajalista">El límite está en nuestros sueños, sueña conmigo a lo grande</li>
+                    </ul>
+                </p>
+                <p class="textWhite textoCentrado">Por todo esto y por unas cuantas cosas más me encanta establecer mi estado perpetuo: <strong>ONLINE Y APRENDIENDO.</strong></p>
+            </section>
             <section class="section">
-                <h3 class="tituloBio">Una no tan pequeña biografía</h3>
+                <h3 class="subtitleWhite textoCentrado">Una no tan pequeña biografía</h3>
+            </section>
+            <section class="section seccionBackground-color centrado">
                 <img class="fotoright fotobio" src="/img/steffi1.png" alt="fotografía bio">
-                <p class="texto">Mi nombre es <strong>Estefanía García</strong>, nací en Valencia, España. A lo largo de mi vida una tónica importante ha sido la búsqueda incesante de conocimiento y de nuevas disciplinas que me retaran día a día, gasolina indispensable
-                    para mi motivación. Es por ésto precisamente que mi camino ha sido bastante atípico dando lugar a un maravilloso perfil multidisciplinar.
+                <p class="textGrey">Mi nombre es <strong>Estefanía García</strong>, nací en Valencia, España. A lo largo de mi vida una tónica importante ha sido la búsqueda incesante de conocimiento y de nuevas disciplinas que me retaran día a día, gasolina indispensable
+                    para mi motivación. Es por ésto precisamente que mi camino ha sido bastante atípico dando lugar a un maravilloso camino multidisciplinar.
                 </p>
                 <img class="fotoleft fotobio" src="/img/fotoconcierto3.png" alt="fotografía concierto">
-                <p class="texto"> Desde muy pequeña me han fascinado las <strong>artes</strong> en todas sus disciplinas, la danza, el canto, las artes plásticas, pero sin duda si algo había muy arraigado en mis entrañas era el amor por la música y en concreto por el fascinante
+                <p class="textGrey"> Desde muy pequeña me han fascinado las <strong>artes</strong> en todas sus disciplinas, la danza, el canto, las artes plásticas, pero sin duda si algo había muy arraigado en mis entrañas era el amor por la música y en concreto por el fascinante
                     campo de la voz. Era tan solo una niña cuando pedí a mi madre entre sollozos que quería aprender a cantar, cosa que en aquel entonces no se me daba muy bien, pero con disciplina, la cabezonería que me caracteriza, que algunos llaman
                     persistencia, fui creciendo en ese arte, hacia caminos insospechables
                     <a href="# ">(más sobre mi yo musical)</a>. He estado toda mi vida obsesionada con las voces prodigiosas y enamorada del arte de las <strong>voces extremas</strong>.</p>
                 <img class="fotoright fotobio" src="/img/steffiIlustracion.png" alt="fotografía ilustración">
-                <p class="texto">Otro amor en mi vida ha sido la posibilidad de crear cosas con mis propias manos pasando desde las manualidades al bricolaje, tocando desde temas de decoración, moda, complementos, y un largo etc. Gracias a ello he pasado por diferentes
+                <p class="textGrey">Otro amor en mi vida ha sido la posibilidad de crear cosas con mis propias manos pasando desde las manualidades al bricolaje, tocando desde temas de decoración, moda, complementos, y un largo etc. Gracias a ello he pasado por diferentes
                     materiales a distintos niveles, desde hobbies de un día a la creación de un negocio de productos artesanales. Entre los materiales que he trabajado se encuentran: alpaca con piedras semipreciosas, cuero, fimo, madera, bambú, textil,
                     cerámica, trapillo, acuarelas, diferentes tipos de cuerdas e hilos. Mi taller parece un museo de mateiales <strong>DIY</strong>.
                 </p><img class="fotoleft fotobio" src="/img/steffisession.png" alt="fotografía sesion ballet">
-                <p class="texto">El deporte ha sido otro de mis ejes esenciales desde muy pequeña y he tenido la oportunidad de prácticar: baloncesto, balonmano, hípica (he tenido un amor desmesurado por los caballos desde muy pequeña), gimnasia ritmica, ballet, tenis
+                <p class="textGrey">El deporte ha sido otro de mis ejes esenciales desde muy pequeña y he tenido la oportunidad de prácticar: baloncesto, balonmano, hípica (he tenido un amor desmesurado por los caballos desde muy pequeña), gimnasia ritmica, ballet, tenis
                     (que tuve que dejar por lesiones derivadas de mi hiperlaxitud), taekwondo, Aikido, Nin Jitsu, Defensa Personal, fitness, etc.</p>
-                <p class="texto">Cuando por fin acabé la enseñanza normativa y pude acceder a la Universidad, significó un <strong>cambio crucial</strong> para mí en la forma de ver eso de "estudiar". Es curioso como en la sociedad que me ha tocado vivir deesde muy pequeños
-                    existe una ruta predefinida de lo que es deseable que haga una persona en cuanto a su definición, su itinerario, lo que se espera de ella. Me matriculé en ADE impulsada por aquella presión social, y tras el primer semestre me di cuenta
-                    que mi vida no podía seguir dirigida por aquella rígida tonadilla y empecé a tomar decisiones por mi misma, no muy populares como podréis imaginar, decidí cambiar de carrera. Comprendí que era adulta y que era hora de empezar a hacer
-                    aquello que iba a definirme como persona. Me matriculé en Turismo y me fui a estudiarla a Ibiza. Ahora miro atrás y me parece casi imposible de creer que utilizara los veranos para hacer Certificaciones Profesionales intensivas: entre
-                    los que pude completar Peluquería y Estética, Contabilidad y un muy valioso título de Monitora de Defensa Personal. Cuando terminé la Diplomatura, volví a Valencia y empecé a la búsqueda de mi primer trabajo serio.<img class="fotoright fotobio"
-                        src="/img/steffimakeup.png" alt="fotografía makeup">Comencé a trabajar en una inmobiliaria, si, era una de aquellas cosas que me encantaban, poder <strong>ayudar a las personas a cumplir sus sueños</strong>, a encontrar el lugar donde
-                    sus planes de futuro y su felicidad tendrían lugar. Una forma dura pero muy bien aprovechada de entender que el poder y el dinero corrompen a un gran porcentaje de personas. Como los retos siempre han guiado mi necesidad de crecimiento
-                    personal realicé un Doble Master en Recursos Humanos y Gestión Laboral. Cuestiones de cambios en la vida y un insight existencial me impulsó a estudiar Psicología y adentrarme en el mundo de las Terapias vinculadas al arte: Musicoterapia,
-                    Danzaterapia, Terapias experienciales y alternativas. Entendí por aquel entonces que algo que no quería que parara nunca en mi vida era seguir formandome. Mi mayor hobbie de esta vida son <strong>¡ESTUDIAR y EMPRENDER!</strong> Pasaron
-                    los años y Seguí alimentando mi monstruo interior avido de nuevos campos de estudio que deborar: Dirección y Gestión de Proyectos, Marketing Digital, Community Management y Gestión de Contenidos, Gestión de <img class="fotoleft fotobio"
-                        src="/img/steffiradio.png" alt="fotografía sesion ballet">Proyectos y Espacios Culturales, Protocolo y Comunicación, Terapia Nutricional, Especialización en Nutrición Deportiva, Fitness para la salud, Entrenamiento Personal, Especialización
-                    en Terapia de Pareja y Sexualidad, Especialización en Trastornos de la Alimentación... A día de hoy estoy activamente enfocada en aprender programación, empezando por Desarrollo Front End manejando HTML5, CSS3, SASS, JavaScript, jQuery,
-                    React, Python, creadores de CMS como Elementor o Divi en Worddress, Shopify, Prestashop etc. Estoy sumergida en el aprendizaje de Freecodecamp.org para la certificación Full Stack y preparando mi candidatura para CodeYourFuture.</p>
-                <p class="texto">La pasión por ayudar a los demás se ha reflejado en mi vida de manera muy fuerte en la colaboración con diferentes asociaciones y protectoras de animales, para las que no sólo colaboro como socia, voluntaria, nodriza, sino que también
+                <p class="textGrey">Cuando por fin acabé la enseñanza normativa y pude acceder a la Universidad, significó un <strong>cambio crucial</strong> para mí en la forma de ver eso de "estudiar". Es curioso como en la sociedad que me ha tocado vivir desde muy pequeños
+                    existe una ruta predefinida de lo que es deseable que haga una persona en cuanto a su definición, su itinerario, lo que se espera de ella. Yo no me sentía representada, ya que mis intereses eran muy diversos y parecía en un principio
+                    que sin conexión ninguna. Estudié la Diplomatura de Turismo. Mientras aprobechaba los veranos para hacer Certificaciones Profesionales intensivas: entre Peluquería y Estética, Contabilidad y un muy valioso título de Monitora de Defensa
+                    Personal. <br> Cuando terminé la Diplomatura, volví a Valencia y empecé a la búsqueda de mi primer trabajo serio.<img class="fotoright fotobio" src="/img/steffimakeup.png" alt="fotografía makeup">Comencé a trabajar en una inmobiliaria,
+                    si, era una de aquellas cosas que me encantaban, poder <strong>ayudar a las personas a cumplir sus sueños</strong>, a encontrar el lugar donde sus planes de futuro y su felicidad tendrían lugar. Una forma dura pero muy bien aprovechada
+                    de entender que el poder y el dinero corrompen a un gran porcentaje de personas. Como los retos siempre han guiado mi necesidad de crecimiento personal realicé un Doble Master en Recursos Humanos y Gestión Laboral. Cuestiones de cambios
+                    en la vida y un insight existencial me impulsó a estudiar Psicología y adentrarme en el mundo de las Terapias vinculadas al arte: Musicoterapia, Danzaterapia, Terapias experienciales y alternativas. Entendí por aquel entonces que algo
+                    que no quería que parara nunca en mi vida era seguir formandome. Mi mayor hobbie de esta vida son <strong>¡ESTUDIAR y EMPRENDER!</strong> Pasaron los años y Seguí alimentando mi monstruo interior ávido de nuevos campos de estudio que
+                    deborar: Dirección y Gestión de Proyectos, Marketing Digital, Community Management y Gestión de Contenidos, Gestión de <img class="fotoleft fotobio" src="/img/steffiradio.png" alt="fotografía sesion ballet">Proyectos y Espacios Culturales,
+                    Protocolo y Comunicación, Terapia Nutricional, Especialización en Nutrición Deportiva, Fitness para la salud, Entrenamiento Personal, Especialización en Terapia de Pareja y Sexualidad, Especialización en Trastornos de la Alimentación...
+                    A día de hoy estoy activamente enfocada en aprender programación, empezando por Desarrollo Front End manejando HTML5, CSS3, SASS, JavaScript, jQuery, React, Python, creadores de CMS como Elementor o Divi en Worddress, Shopify, Prestashop
+                    etc. Estoy sumergida en el aprendizaje de Freecodecamp.org para la certificación Full Stack y preparando mi candidatura para CodeYourFuture.</p>
+                <p class="textGrey">La pasión por ayudar a los demás se ha reflejado en mi vida de manera muy fuerte en la colaboración con diferentes asociaciones y protectoras de animales, para las que no sólo colaboro como socia, voluntaria, nodriza, sino que también
                     he realizado numerosas campañas para recogidas de fondos a lo largo de estos años. <img class="fotoright fotobio" src="/img/steffiavatar.png" alt="fotografía ilustración">Creo firmemente en que entre todos podemos poner un granito
                     de arena para que el mundo sea un poco mejor, por eso a lo largo de los años además he colaborado de diferentes maneras con ONGs como ACNUR, Cruz Roja, Ayuda en Acción, Green Peace, Médicos sin fronteras, Aldeas Infantiles, Ecolectivo
                     SAB, AECC, etc. Creo que podemos elegir tener la oportunidad de participar en la sociedad y transformarla, haciendo crecer nuestra actitud humanitaria.</p>
-            </section>
-            <section class="section seccionBackground-color centrado">
-                <h3 class="tituloBio"> Líneas de trabajo</h3>
-                <p class="texto">He trabajado en mi marca personal desde 2012. Con diferentes líneas de negocio, todas ellas centradas en la optimización de recursos, el analisis de la situación, la búsqueda de la mejor fórmula de adherencia y utilizando todas las herramientas
-                    tecnológicas que la situación requiera, teniendo siempre la innovación en el punto de mira:
-                    <ul class="listaBolitas">
-                        <li class="texto"><strong>Uptimizate:</strong> ayudo a emprendedores, autónomos, proyectos y pymes de todos los sectores a desarrollar y optimizar sus modelos de negocio, su transición digital, asesoro y capacito para la creación de implementación
-                            de un plan de acción de éxito y les guío para que lleven a proyectos al siguiente nivel.</li>
-                        <li class="texto"><strong>Up. Autogestión:</strong> vuelco todos mis conocimientos para ayudar a aquellas asociaciones, ONGs o pequeños proyectos sin animo de lucro interesados en promover cuestiones sociales, culturales, etc. Donde la optimización
-                            de procesos, recursos y resolución creativa de problemas se vuelve más importante que nunca, siempre dentro del modelo de autogestión y recursos muy limitados.</li>
-                        <li class="texto"><strong>Up. Nutrición y Salud:</strong> donde ayudo a las personas a recuperar hábitos de alimentación saludable acompañadas de actividad deportiva adecuada a su situación, edad y necesidades de adherencia, tanto a nivel individual
-                            como a través de talleres colectivos presenciales u online.</li>
-                        <li class="texto"><strong>Up. my Voice:</strong> esta sección es para todos aquellos que quieren mejorar su habilidad vocal. El desarrollo de la voz hablada o cantada vista de una manera multidisciplinar completa una experiencia única, personalida
-                            y diferente abarcando no sólo clases particulares o en pequeños grupos, presenciales u online, sino acompañamiento en estudio, vocal coaching, dirección de voces para proyectos, etc.</li>
-                        <li class="texto"><strong>Up. your Code:</strong> Aquí despliego mis armas y mi amor por el código, el diseño, la optimización de recursos, afán de reutilización y trabajo en equipo. Sí, necesitamos estar online y si eres de l@s que todavía no estaban
-                            convencid@s sólo ha hecho falta una pandemia para aclararlo. La transición digital debería ser pasado, pero no te preocupes nunca es tarde. Estoy aquí para ayudarte con tu actual o futura we y también adoro trabajar en proyectos
-                            con otros equipos.</li>
-                    </ul>
-                </p>
-            </section>
-            <section class="section centrado">
-                <h3 class="tituloBio">Misión y Valores</h3>
-                <p class="texto textoCentrado">Si algo he aprendido de todo esto son las bases que impulsan mi razón de ser y mis valores:
-                    <ul class="listacajas flexFather">
-                        <li class="textoLista cajalista">Me apasiona ayudar a los demás a encontrar una mejor versión de ellos mismos</li>
-                        <li class="textoLista cajalista">Trabajo con personas y con sus proyectos</li>
-                        <li class="textoLista cajalista">Nunca se acaba de aprender</li>
-                        <li class="textoLista cajalista">No hay mejor reto que seguir superándose</li>
-                        <li class="textoLista cajalista">Un perfil multidisciplinar me permite una visión de 360º</li>
-                        <li class="textoLista cajalista">Nada mejor que la búsqueda de soliciones creativas</li>
-                        <li class="textoLista cajalista">Que la diferenciación marque tu línea de vida es maravilloso</li>
-                        <li class="textoLista cajalista">Arte y Optimización no están reñidos</li>
-                        <li class="textoLista cajalista">El límite está en nuestros sueños, adoro soñar a lo grande</li>
-                    </ul>
-                </p>
-                <p class="texto textoCentrado">Por todo esto y por unas cuantas cosas más me encanta establecer mi estado perpetuo: <strong>ONLINE Y APRENDIENDO.</strong></p>
+
             </section>
 
+
         </article>
-    </main>
+    </div>
 </body>
 
 <!-----------        FOOTER       -------------------------------------->
@@ -133,15 +121,22 @@
             <div class="logoFooter left ">
                 <a href="index.html ">STEFFI GARCIA</a>
             </div>
+            <!----------- Sección Newsletter------------>
 
+            <section class="newsletter ">
+                <form class="newsletter__newsform">
+                    <input class="newsletter__newsform__input" type=" text " placeholder="*email " id="email ">
+                    <button class="newsletter__newsform__button " type="button " id="subs ">Suscribete</button>
+                </form>
+            </section>
             <!-------------------------------- menú FOOTER --------------------------------------------------------------->
 
             <div class="flexItem ">
                 <nav class="navFooter ">
                     <ul class="menuFooter ">
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog.html ">Blog</a></li>
                         <li><a href="envios.html ">Envíos</a></li>
-                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politica-privacidad.html ">Política de Privacidad</a></li>
                         <li>
                             <a href="mailto:info@steffigarcia.com "> <i class="far fa-envelope "></i> info@steffigarcia.com</a>
                         </li>
@@ -167,8 +162,8 @@
 
     </div>
     <!------------------------------- bloque INFO FOOTER----------------------->
-
-    <div class="infoFooter ">
+    <div class="separator"></div>
+    <div class="infoFooter centrado">
 
         <p>&copy;2021 Designed and Developed by
             <a href="# ">Uptimizate </a>
@@ -178,6 +173,8 @@
     </div>
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 </body>
 
 </html>

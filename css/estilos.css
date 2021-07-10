@@ -62,26 +62,36 @@
         padding: 15px 0;
     }
     
+    .logoWhite {
+        display: inline-block;
+        font-size: 25px;
+        color: #fff;
+        padding: 15px 0;
+    }
+    
     a.logo:hover {
         color: #A1BBC8;
     }
     
     .logoFooter a {
         display: inline-block;
-        margin: 40px 0px 40px 40px;
-        height: auto;
-        font-size: 30px;
-        color: #636160;
-        background-color: #d4e1e9;
-        padding: 15px;
-        border: 1px solid #a8a6a4;
-        border-radius: 15px;
+        font-size: 40px;
+        line-height: 45px;
+        font-weight: 600;
+        background: linear-gradient(to bottom right, #01ffda, #926acf, #fbbde9);
+        /* clip informático */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: color .2s ease-out;
+        padding: 15px 0;
     }
     
     .logoFooter a:hover {
         color: #636160;
         background-color: #fff;
-        border: 1px solid #a8a6a4;
+        transform: scale(1.1, 1.1);
+        transition: transform .2s ease-out;
     }
     /*----------------------------------- Menús -----------------------------------*/
     
@@ -92,6 +102,10 @@
         color: #A1BBC8;
         display: inline-block;
         margin: auto;
+    }
+    
+    .menuFooter a:hover {
+        color: rgb(215, 147, 217);
     }
     
     ul {
@@ -106,8 +120,7 @@
         color: #5a7785;
     }
     
-    .menu a:hover,
-    .menuFooter a:hover {
+    .menu a:hover {
         color: #5a7785;
     }
     /* ------------------------ Listados-----------------*/
@@ -126,6 +139,13 @@
         color: #5a7785;
     }
     
+    .tituloSeccionBlanco {
+        padding: 50px 0;
+        font-size: 45px;
+        font-weight: 400;
+        color: #fff;
+    }
+    
     .tituloProyecto {
         font-size: 20px;
         font-weight: 400;
@@ -140,16 +160,32 @@
         text-align: center;
     }
     
-    .tituloBio {
+    .subtitleWhite {
         font-size: 30px;
         font-weight: 400;
-        color: #5a7785;
+        color: #fff;
     }
     
     .texto {
         width: 95%;
         font-size: 14px;
         font-weight: 300;
+        color: #636160;
+        padding: 15px 0;
+    }
+    
+    .textWhite {
+        width: 95%;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(230, 230, 230);
+        padding: 15px 0;
+    }
+    
+    .textGrey {
+        width: 95%;
+        font-size: 15px;
+        font-weight: 400;
         color: #636160;
         padding: 15px 0;
     }
@@ -185,16 +221,49 @@
         background-color: #b7d1df;
     }
     /* ----- Formulario----*/
-    /*-- Formulario --*/
+    
+    .contacta {
+        width: 100vw;
+        padding-top: 70px;
+        height: 750px;
+        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
+    }
+    
+    .formulario {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 18px;
+        padding: 20px;
+    }
     
     .itemFormulario,
     .itemBotones {
         width: 100%;
+        margin: 15px auto;
+    }
+    
+    .btnCentrado {
+        text-align: center;
+        margin-top: 35px;
+    }
+    
+    .label {
+        padding-top: 10px;
+    }
+    
+    .btn-primary {
+        color: #fff;
+        background-color: rgb(35, 216, 207);
+        border-color: rgba(72, 180, 207, 0);
+        padding: 5px 25px;
         margin: 0 auto;
     }
     
-    #formulario {
-        margin: 100px 0;
+    .btn-primary:hover {
+        color: #fff;
+        background-color: rgb(215, 147, 217);
+        border-color: rgb(160, 114, 209);
     }
     /*--------------------- Proyectos Destacados -------------------------*/
     
@@ -248,35 +317,35 @@
     /* -------- SECCIÓN Principal --------*/
     
     .seccionPrincipal {
-        height: 95vh;
-        background-image: url(../img/steffigarcia.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        padding-top: 70px;
+        height: 98vh;
     }
     
-    .sobreMi {
+    .sobreMi_resumen {
         margin: left;
-        width: 60%;
+        width: auto;
+        height: auto;
+        padding: 10px;
         font-size: 15px;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255);
         border-radius: 15px;
         box-shadow: 0px 0px 7px 3px #b3cad6;
         text-align: center;
+        position: fixed;
         display: inline-block;
-        position: absolute;
-        top: -20px;
+        left: 120px;
+        top: 356px;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count: 1;
+        z-index: 5;
     }
     /*----------FIN SECCIÓN Principal -------------------------------*/
     /* -------- SECCIÓN Destacados --------*/
     
     .seccionDestacados {
-        height: 100px;
-        position: relative;
+        height: 400px;
+        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
     }
     /*----------FIN SECCIÓN Destacados ------------------------------*/
     /* -------- SECCIÓN Eleva --------*/
@@ -288,38 +357,79 @@
     
     .seccionEleva {
         background: rgb(105, 136, 153);
-        background: linear-gradient(90deg, rgba(105, 136, 153, 1) 0%, rgba(161, 187, 200, 1) 35%, rgba(233, 238, 241, 1) 100%);
+        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
         height: 535px;
+    }
+    /*---------FIN SECCIÓN Eleva ----------------------------------*/
+    /* -------- Footer --------*/
+    
+    footer {
+        height: 270px;
+        background-color: #000;
+        color: #A1BBC8;
+        font-size: 14px;
+        padding-top: 50px;
+        z-index: 1;
         position: relative;
+    }
+    
+    footer a {
+        color: #a8a6a4;
+    }
+    
+    footer a:hover {
+        color: #A1BBC8;
+    }
+    
+    .separator {
+        border-top: 1px solid #A1BBC8;
+    }
+    
+    .infoFooter {
+        padding-top: 30px;
+        text-align: left;
+    }
+    
+    .redesFooter {
+        color: rgba(79, 199, 207, 0.856);
+        display: inline-block;
+        font-size: 30px;
+        padding: 15px;
+    }
+    
+    .redesFooter:hover {
+        transform: scale(1.2, 1.2);
+        transition: transform .2s ease-out;
+        color: rgb(160, 114, 209);
     }
     /* --------Newsletter --------*/
     
     .newsletter {
         margin: auto;
-        width: 500px;
-        height: 50px;
+        width: 300px;
+        height: 35px;
         font-size: 15px;
-        background-color: #fff;
+        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
         border-radius: 15px;
         box-shadow: 0px 0px 7px 3px #b3cad6;
         position: absolute;
-        bottom: -20px;
-        right: 0;
-        left: 0;
+        bottom: 20px;
+        right: 19%;
     }
     
-    .newsform {
-        display: inline-block;
-        margin: auto;
+    .newsletter__newsform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
-    .newsform input,
-    button {
+    .newsletter__newsform__input,
+    .newsletter__newsform__button {
         border: 1px solid #A1BBC8;
         border-radius: 5px;
-        padding: 3px 5px;
+        padding: 2.5px 4px;
         color: #fff;
-        display: inline-block;
+        margin: 3px;
     }
     
     button {
@@ -333,54 +443,18 @@
     }
     
     .email-input {
-        padding: 15px;
-        text-align: center;
-    }
-    
-    .email-input p {
-        font-weight: 600;
-        display: inline-block;
-        padding-right: 20px;
-        color: #5a7785;
-    }
-    /*---------FIN SECCIÓN Eleva ----------------------------------*/
-    /* -------- Footer --------*/
-    
-    footer {
-        height: 270px;
-        background-color: #46565f;
-        color: #A1BBC8;
-        font-size: 14px;
-        padding-top: 50px;
-    }
-    
-    footer a {
-        color: #a8a6a4;
-    }
-    
-    footer a:hover {
-        color: #A1BBC8;
-    }
-    
-    .infoFooter {
-        padding-top: 10px;
-        text-align: center;
-        border-top: 1px solid #A1BBC8;
-    }
-    
-    .redesFooter {
-        display: inline-block;
-        font-size: 30px;
-        padding: 15px;
-    }
-    
-    .email-input {
         justify-items: flex-end;
         padding-left: 25px;
     }
     /*---------FIN SECCIÓN Footer ----------------------------------*/
     /*---------PÁGINA SERVICIOS ----------------------------------*/
     /* --- flex Servicios ---*/
+    
+    .servicios {
+        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
+        width: 100wv;
+        height: 2300px;
+    }
     
     #titLineas {
         border-radius: 15px;
@@ -395,7 +469,7 @@
         flex: 0 0 auto;
         height: 85vh;
         background: rgb(105, 136, 153);
-        background: linear-gradient(90deg, rgba(105, 136, 153, 1) 0%, rgba(161, 187, 200, 1) 35%, rgba(233, 238, 241, 1) 100%);
+        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
     }
     
     .seccion {
@@ -445,6 +519,12 @@
     /*--------- FIN PÁGINA SERVICIOS ----------------------------------*/
     /*--------- INICIO PÁGINA SOBRE MI ----------------------------------*/
     
+    .sobreMiPagina {
+        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
+        width: 100wv;
+        height: 2400px;
+    }
+    
     .bannerPagina {
         width: 100vw;
         height: 50px;
@@ -455,8 +535,17 @@
     .pagina {
         width: 100vw;
         height: 80px;
+        padding-top: 70px;
         padding-bottom: 20px;
-        background-color: #91bcd142;
+    }
+    
+    .paginaTituloBlanco {
+        padding: 20px;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: end;
+        color: #fff;
+        margin-bottom: 50px;
     }
     
     .pagina__titulo {
@@ -467,8 +556,13 @@
         color: #5a7785;
     }
     
+    .biografía {
+        position: relative;
+    }
+    
     .section {
-        padding: 50px 0;
+        padding: 20px;
+        margin: 20px 0;
     }
     
     .textoLista {
@@ -493,13 +587,13 @@
     .cajalista:hover {
         background-color: #95cae946;
         border: 1px solid #3c8cbb;
-        color: #3c8cbb;
+        color: #fff;
     }
     
     .seccionBackground-color {
         background-color: #f9f9fa;
         border-radius: 18px;
-        padding: 20px;
+        padding: 60px;
     }
     
     .listacajas {
@@ -516,4 +610,13 @@
         width: 100px;
         height: 100px;
     }
-    /*--------- INICIO PÁGINA SOBRE MI ----------------------------------*/
+    
+    .fotobio:hover {
+        border-radius: 50%;
+        transform: scale(3, 3);
+        width: 100px;
+        height: 100px;
+    }
+    /*--------- FIN PÁGINA SOBRE MI ----------------------------------*/
+    /*--------- INICIO PÁGINA CONTACTA ----------------------------------*/
+    /*--------- INICIO PÁGINA CONTACTA ----------------------------------*/
