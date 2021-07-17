@@ -52,7 +52,6 @@
         /*----------------------------------- Menús -----------------------------------*/
         
         .cabeceraMenu {
-            border: 1px solid green;
             width: 100%;
             max-width: 1440px;
             display: flex;
@@ -62,14 +61,13 @@
         }
         
         .logoCabecera {
-            border: 1px solid red;
             width: 50%;
+            padding-left: 20px;
             justify-self: start;
             align-items: center;
         }
         
         .navmenu {
-            border: 1px solid red;
             width: 50%;
             justify-content: flex-end;
             align-items: center;
@@ -85,7 +83,6 @@
         }
         
         .navmenu ul li {
-            border: 1px solid yellow;
             text-align: right;
             width: auto;
             height: auto;
@@ -214,11 +211,6 @@
             .cabecera {
                 height: 150px
             }
-            .logoCabecera {
-                width: 100%;
-                padding-left: 30px;
-                justify-self: center;
-            }
             .navmenu {
                 width: 100%;
                 justify-self: center;
@@ -248,7 +240,6 @@
             .logoFooter a {
                 width: 100%;
                 text-align: center;
-                border: 1px solid white;
                 display: block;
                 font-size: 30px;
                 padding: 15px 0;
@@ -267,6 +258,8 @@
             }
             .logoCabecera {
                 width: 100%;
+                padding-left: 30px;
+                justify-self: center;
             }
             .burguermenu {
                 display: block;
@@ -287,8 +280,11 @@
                 text-align: center;
                 padding: 5px;
             }
+            .logoFooter {
+                width: 100%;
+            }
             .logoFooter a {
-                border-bottom: 1px solid #E9EEF1;
+                width: 100%;
                 transform: none;
                 transition: none;
             }
@@ -296,8 +292,8 @@
                 border-bottom: transform: none;
                 transition: none;
             }
-            .redesFooter:hover {
-                transform: none;
-                transition: none;
+            nav.menuFooter {
+                width: 100%;
+                text-align: center;
             }
         }
