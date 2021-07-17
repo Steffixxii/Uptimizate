@@ -8,36 +8,43 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
     <!----------------------------------------- Cabecera ----------------------------------------->
     <header class="cabecera">
-        <div class="centrado">
-            <div class="gridCabecera">
+        <div class="cabeceraMenu centrado ">
 
-                <!----------- Logo Cabecera------------>
+            <!----------- Logo Cabecera------------>
 
-                <div id="logoCabecera">
-                    <a href="index.html" class="logo">STEFFI GARCIA</a>
-                </div>
-                <!----------- Menú Cabecera------------>
-                <div id="navmenu">
-                    <nav>
-                        <ul class="menu nav flexFather">
-                            <li class="nav-item flexItem">
-                                <a class="nav-link" href=" sobreMi.html ">Sobre mi</a></li>
-                            <li class="nav-item flexItem "><a class="nav-link" href="servicios.html ">Servicios</a></li>
-                            <li class="nav-item flexItem "><a class="nav-link" href="cursos.html ">Cursos</a></li>
-                            <li class="nav-item flexItem "><a class="nav-link" href="https://steffigarcia.com ">Tienda Online</a></li>
-                            <li class="nav-item flexItem "><a class="nav-link" href="Contacta.html ">Contacta</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
+            <div class="logoCabecera left">
+                <a href="index.html" class="logo">STEFFI GARCIA</a>
             </div>
+            <!----------- Menú Cabecera------------>
+
+            <nav class="navmenu right">
+                <ul class="navMenuContainer">
+                    <li class="right">
+                        <a class="nav-link" href=" sobreMi.html ">Sobre mi</a></li>
+                    <li class="right"><a class="nav-link " href="servicios.html ">Servicios</a></li>
+                    <li class="right"><a class="nav-link " href="cursos.html ">Cursos</a></li>
+                    <li class="right"><a class="nav-link " href="https://steffigarcia.com ">Tienda</a></li>
+                    <li class="right"><a class="nav-link " href="Contacta.html ">Contacta</a></li>
+                </ul>
+                <div class="burguermenu right">
+                    <img class="burgermenu__img" src="img/burger_menu.svg" />
+                </div>
+
+            </nav>
+
+        </div>
     </header>
+
+
+    <!----------- Sobre mi------------>
+
     <div class="sobreMiPagina">
         <section class="pagina ">
             <h4 class="paginaTituloBlanco centrado">Sobre mi</h4>
@@ -45,13 +52,13 @@
 
         <article class="biografia centrado">
             <div class="sobreMi_resumen centrado">
-                <p class="texto"><i class="fas fa-user-astronaut"> </i> Previvor <br> <i class="fas fa-heart"></i> Psychologist <br><i class="fas fa-carrot"></i> Nutrition <br><i class="fas fa-microphone-alt"></i> Metal Vocalist<br> <i class="fas fa-rainbow"></i> Makeup
+                <p class="textGrey"><i class="fas fa-user-astronaut"> </i> Previvor <br> <i class="fas fa-heart"></i> Psychologist <br><i class="fas fa-carrot"></i> Nutrition <br><i class="fas fa-microphone-alt"></i> Metal Vocalist<br> <i class="fas fa-rainbow"></i> Makeup
                     Artist
                     <br><i class="far fa-lightbulb"></i> Project Management <br><i class="fas fa-globe"></i> Digital Marketing <br><i class="fas fa-code"></i> Frontend Developer <br><i class="fab fa-bitcoin"></i> Stunned by Crypto</p>
             </div>
 
             <section class="section centrado">
-                <h3 class="subtitleWhite textoCentrado">Misión y Valores</h3>
+                <h3 class="h5 textoCentrado">Misión y Valores</h3>
                 <p class="textWhite textoCentrado">Si algo he aprendido de todo esto son las bases que impulsan mi razón de ser y mis valores:
                     <ul class="listacajas flexFather">
                         <li class="textoLista cajalista">Me apasiona ayudar a los demás a encontrar una mejor versión de ellos mismos</li>
@@ -68,7 +75,7 @@
                 <p class="textWhite textoCentrado">Por todo esto y por unas cuantas cosas más me encanta establecer mi estado perpetuo: <strong>ONLINE Y APRENDIENDO.</strong></p>
             </section>
             <section class="section">
-                <h3 class="subtitleWhite textoCentrado">Una no tan pequeña biografía</h3>
+                <h5 class="h5 textoCentrado">Una no tan pequeña biografía</h5>
             </section>
             <section class="section seccionBackground-color centrado">
                 <img class="fotoright fotobio" src="/img/steffi1.png" alt="fotografía bio">

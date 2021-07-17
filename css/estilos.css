@@ -4,8 +4,13 @@
         box-sizing: border-box;
     }
     
+    html {
+        font-size: 62.5%;
+    }
+    
     body {
         font-family: 'Open Sans', sans-serif;
+        max-width: 100%;
     }
     
     a {
@@ -14,137 +19,10 @@
     
     .centrado {
         width: 1140px;
-        margin: 0 auto;
-    }
-    
-    .fotoleft {
-        padding: 15px 30px 10px 0;
-        float: left;
-    }
-    
-    .fotoright {
-        padding: 15px 0 10px 30px;
-        float: right;
-    }
-    /*---------------------Distribución Flex y Float-----------------------*/
-    
-    .flexFather {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .flexItem {
-        justify-items: flex-start;
-        align-items: strech;
-    }
-    
-    .left {
-        align-self: flex-start;
-        width: 33%;
-    }
-    
-    .right {
-        margin-left: auto;
-        width: 33%;
-    }
-    
-    .float {
-        float: right;
-    }
-    /*------------------------------------ Logos ------------------------------------*/
-    
-    a.logo {
-        display: inline-block;
-        font-size: 25px;
-        color: #636160;
-        padding: 15px 0;
-    }
-    
-    .logoWhite {
-        display: inline-block;
-        font-size: 25px;
-        color: #fff;
-        padding: 15px 0;
-    }
-    
-    a.logo:hover {
-        color: #A1BBC8;
-    }
-    
-    .logoFooter a {
-        display: inline-block;
-        font-size: 40px;
-        line-height: 45px;
-        font-weight: 600;
-        background: linear-gradient(to bottom right, #01ffda, #926acf, #fbbde9);
-        /* clip informático */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: color .2s ease-out;
-        padding: 15px 0;
-    }
-    
-    .logoFooter a:hover {
-        color: #636160;
-        background-color: #fff;
-        transform: scale(1.1, 1.1);
-        transition: transform .2s ease-out;
-    }
-    /*----------------------------------- Menús -----------------------------------*/
-    
-    .menuFooter a {
-        padding: 5px;
-        font-size: 15px;
-        font-weight: 500;
-        color: #A1BBC8;
-        display: inline-block;
-        margin: auto;
-    }
-    
-    .menuFooter a:hover {
-        color: rgb(215, 147, 217);
-    }
-    
-    ul {
-        list-style: none;
-    }
-    
-    .menu a {
-        display: inline-block;
-        padding: 23px;
-        font-size: 15px;
-        font-weight: 500;
-        color: #5a7785;
-    }
-    
-    .menu a:hover {
-        color: #5a7785;
-    }
-    /* ------------------------ Listados-----------------*/
-    
-    .listaBolitas {
-        width: 80%;
-        list-style-type: circle;
+        max-width: 100%;
         margin: 0 auto;
     }
     /*------------------------- Títulos y Textos ------------------------------*/
-    
-    .tituloSeccion {
-        padding: 50px 0;
-        font-size: 45px;
-        font-weight: 400;
-        color: #5a7785;
-    }
-    
-    .tituloSeccionBlanco {
-        padding: 50px 0;
-        font-size: 45px;
-        font-weight: 400;
-        color: #fff;
-    }
     
     .tituloProyecto {
         font-size: 20px;
@@ -160,34 +38,134 @@
         text-align: center;
     }
     
-    .subtitleWhite {
-        font-size: 30px;
-        font-weight: 400;
+    .h2 {
+        padding: 50px 0;
+        font: 500 4rem 'Open Sans';
+        color: #5a7785;
+    }
+    
+    .h2Blanco {
+        padding: 20px;
+        font: 500 4rem 'Open Sans';
+        text-align: end;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    
+    .h2Grey {
+        padding: 20px;
+        font: 400 4rem 'Open Sans';
+        text-align: end;
+        color: #5a7785;
+    }
+    
+    .h3 {
+        padding: 50px 0;
+        font: 400 4.5rem 'Open Sans';
+        color: #5a7785;
+    }
+    
+    .h3Blanco {
+        padding: 50px 0;
+        font: 400 4.5rem 'Open Sans';
         color: #fff;
     }
     
-    .texto {
-        width: 95%;
-        font-size: 14px;
-        font-weight: 300;
-        color: #636160;
-        padding: 15px 0;
+    .h5 {
+        font: 400 3rem 'Open Sans';
+        color: #fff;
+    }
+    
+    .h5Grey {
+        font: 400 3rem 'Open Sans';
+        color: #5a7785;
     }
     
     .textWhite {
         width: 95%;
-        font-size: 15px;
-        font-weight: 400;
+        font: 400 1.5rem 'Open Sans';
         color: rgb(230, 230, 230);
         padding: 15px 0;
     }
     
     .textGrey {
         width: 95%;
-        font-size: 15px;
-        font-weight: 400;
+        font: 400 1.5rem 'Open Sans';
         color: #636160;
         padding: 15px 0;
+    }
+    
+    .textoLista {
+        text-align: center;
+        list-style: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: #636160;
+        padding: 10px 0;
+    }
+    
+    .textoCentrado {
+        text-align: center;
+    }
+    /* ---- Fotos ---*/
+    
+    .fotoleft {
+        padding: 15px 30px 10px 0;
+        float: left;
+    }
+    
+    .fotoright {
+        padding: 15px 0 10px 30px;
+        float: right;
+    }
+    
+    .fotobio {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .fotobio:hover {
+        border-radius: 50%;
+        transform: scale(3, 3);
+        width: 100px;
+        height: 100px;
+    }
+    /*---------------------Distribución Flex y Float-----------------------*/
+    
+    .flexFather {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .flexItem {
+        justify-self: flex-start;
+        align-items: strech;
+    }
+    
+    .left {
+        align-self: flex-start;
+    }
+    
+    .right {
+        margin-left: auto;
+    }
+    
+    .float {
+        float: right;
+    }
+    /* ------------------------ Listados-----------------*/
+    
+    ul {
+        list-style: none;
+    }
+    
+    .listaBolitas {
+        width: 80%;
+        list-style-type: circle;
+        margin: 0 auto;
     }
     /* --------------------- Tabla ----------------------------------*/
     
@@ -265,60 +243,12 @@
         background-color: rgb(215, 147, 217);
         border-color: rgb(160, 114, 209);
     }
-    /*--------------------- Proyectos Destacados -------------------------*/
-    
-    .cajaArticulos {
-        margin: 50px auto;
-        width: 80vw;
-    }
-    
-    .artDestacado {
-        width: 30%;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
     /*-----------------------------------SECCIONES -----------------------------------*/
-    /* --------SECCIÓN Cabecera --------*/
-    
-    .cabecera {
-        width: 100vw;
-        height: 70px;
-        border-bottom: 1px solid #E9EEF1;
-        background-color: #fff;
-        position: fixed;
-        top: 0;
-        overflow: hidden;
-    }
-    
-    #navmenu a:hover {
-        color: #A1BBC8;
-    }
-    /*-------------------------Grid Cabecera ---------------*/
-    
-    .gridCabecera {
-        display: grid;
-        grid-template-areas: "logo menu ";
-        grid-template-columns: 35% 65%;
-    }
-    
-    #logoCabecera {
-        grid-area: logo;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    #navmenu {
-        grid-area: menu;
-        justify-content: center;
-        align-items: center;
-    }
-    /*-------------------------FIN Grid Cabecera ---------------*/
-    /*-------------------------SECCIÓN Cabecera------------------------*/
     /* -------- SECCIÓN Principal --------*/
     
     .seccionPrincipal {
         padding-top: 70px;
-        height: 98vh;
+        height: auto;
     }
     
     .sobreMi_resumen {
@@ -347,6 +277,18 @@
         height: 400px;
         background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
     }
+    /*--------------------- Articulos Destacados -------------------------*/
+    
+    .cajaArticulos {
+        margin: 50px auto;
+        width: 80vw;
+    }
+    
+    .artDestacado {
+        width: 30%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
     /*----------FIN SECCIÓN Destacados ------------------------------*/
     /* -------- SECCIÓN Eleva --------*/
     
@@ -360,93 +302,6 @@
         background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
         height: 535px;
     }
-    /*---------FIN SECCIÓN Eleva ----------------------------------*/
-    /* -------- Footer --------*/
-    
-    footer {
-        height: 270px;
-        background-color: #000;
-        color: #A1BBC8;
-        font-size: 14px;
-        padding-top: 50px;
-        z-index: 1;
-        position: relative;
-    }
-    
-    footer a {
-        color: #a8a6a4;
-    }
-    
-    footer a:hover {
-        color: #A1BBC8;
-    }
-    
-    .separator {
-        border-top: 1px solid #A1BBC8;
-    }
-    
-    .infoFooter {
-        padding-top: 30px;
-        text-align: left;
-    }
-    
-    .redesFooter {
-        color: rgba(79, 199, 207, 0.856);
-        display: inline-block;
-        font-size: 30px;
-        padding: 15px;
-    }
-    
-    .redesFooter:hover {
-        transform: scale(1.2, 1.2);
-        transition: transform .2s ease-out;
-        color: rgb(160, 114, 209);
-    }
-    /* --------Newsletter --------*/
-    
-    .newsletter {
-        margin: auto;
-        width: 300px;
-        height: 35px;
-        font-size: 15px;
-        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
-        border-radius: 15px;
-        box-shadow: 0px 0px 7px 3px #b3cad6;
-        position: absolute;
-        bottom: 20px;
-        right: 19%;
-    }
-    
-    .newsletter__newsform {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .newsletter__newsform__input,
-    .newsletter__newsform__button {
-        border: 1px solid #A1BBC8;
-        border-radius: 5px;
-        padding: 2.5px 4px;
-        color: #fff;
-        margin: 3px;
-    }
-    
-    button {
-        background-color: #A1BBC8;
-        padding: 3px 5px;
-    }
-    
-    button:hover {
-        background-color: #fff;
-        color: #A1BBC8;
-    }
-    
-    .email-input {
-        justify-items: flex-end;
-        padding-left: 25px;
-    }
-    /*---------FIN SECCIÓN Footer ----------------------------------*/
     /*---------PÁGINA SERVICIOS ----------------------------------*/
     /* --- flex Servicios ---*/
     
@@ -454,22 +309,6 @@
         background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
         width: 100wv;
         height: 2300px;
-    }
-    
-    #titLineas {
-        border-radius: 15px;
-        background-color: #46565f;
-        color: #fff;
-        height: 100px;
-        width: 20vw;
-        margin: 20px auto;
-    }
-    
-    #LineasdeNegocio {
-        flex: 0 0 auto;
-        height: 85vh;
-        background: rgb(105, 136, 153);
-        background-image: linear-gradient(to bottom right, rgb(215, 147, 217), rgb(201, 139, 215), rgb(187, 131, 213), rgb(174, 122, 211), rgb(160, 114, 209), rgb(146, 106, 207), rgb(128, 124, 207), rgb(109, 143, 207), rgb(91, 161, 207), rgb(72, 179, 207), rgb(54, 198, 207), rgb(35, 216, 207));
     }
     
     .seccion {
@@ -485,36 +324,6 @@
     
     .seccion:hover {
         background-color: #fff;
-    }
-    
-    .tituloLinea {
-        padding: 45px 10px;
-        font-size: 35px;
-        font-weight: 300;
-        color: #fff;
-        animation-duration: 3s;
-        animation-name: aparecer;
-        animation-iteration-count: 1;
-    }
-    
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        50% {
-            opacity: 0.5;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    .tituloSec {
-        padding: 20px 10px;
-        font-size: 35px;
-        font-weight: 400;
-        color: #5a7785;
-        text-align: center;
     }
     /*--------- FIN PÁGINA SERVICIOS ----------------------------------*/
     /*--------- INICIO PÁGINA SOBRE MI ----------------------------------*/
@@ -539,23 +348,6 @@
         padding-bottom: 20px;
     }
     
-    .paginaTituloBlanco {
-        padding: 20px;
-        font-size: 40px;
-        font-weight: 500;
-        text-align: end;
-        color: #fff;
-        margin-bottom: 50px;
-    }
-    
-    .pagina__titulo {
-        padding: 20px;
-        font-size: 40px;
-        font-weight: 500;
-        text-align: end;
-        color: #5a7785;
-    }
-    
     .biografía {
         position: relative;
     }
@@ -563,15 +355,6 @@
     .section {
         padding: 20px;
         margin: 20px 0;
-    }
-    
-    .textoLista {
-        text-align: center;
-        list-style: none;
-        font-size: 14px;
-        font-weight: bold;
-        color: #636160;
-        padding: 10px 0;
     }
     
     .cajalista {
@@ -600,23 +383,15 @@
         width: 60%;
         margin: 0 auto;
     }
-    
-    .textoCentrado {
-        text-align: center;
-    }
-    
-    .fotobio {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-    }
-    
-    .fotobio:hover {
-        border-radius: 50%;
-        transform: scale(3, 3);
-        width: 100px;
-        height: 100px;
-    }
     /*--------- FIN PÁGINA SOBRE MI ----------------------------------*/
     /*--------- INICIO PÁGINA CONTACTA ----------------------------------*/
-    /*--------- INICIO PÁGINA CONTACTA ----------------------------------*/
+    /*_____ MEDIA QUERIES____*/
+    
+    @media screen and (max-width: 1022px) {}
+    
+    @media screen and (max-width: 600px) {
+        .seccionPrincipal {
+            padding-top: 230px;
+            height: auto;
+        }
+    }
